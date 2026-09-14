@@ -1,5 +1,5 @@
 # yt-bhs
-A simple command-line tool for downloading Youtube videos as songs, with embedded metadata and thumbnail cropping, with data taken from playlists exported by the now discontinued *BlackHole* music player.
+A simple command-line tool for downloading Youtube videos as songs, with embedded metadata and thumbnail cropping. The data is taken from playlists exported by the now discontinued *BlackHole* music player.
 ## INSTALL
 Install *yt-bhs* through pip.
 
@@ -10,7 +10,7 @@ Refer to the quick steps below:
 2. Copy it over to your system, in a directory of your choice.
 3. Within this same directory, open up a command prompt and use the following template:
 
-		python cli.py [OPTIONS] "your_playlist.json"
+		yt-bhs [OPTIONS] "your_playlist.json"
 
 4. The playlist will be exported to the stated output folder.
 
@@ -28,7 +28,7 @@ The options available in yt-bhs are:
 ## MANUAL INSTALL
 ### DEPENDENCIES
 *yt-bhs* is currently tested with *Python 3.11*, hence versions same as or above *Python 3.11* are recommended. For testing and running the package yourself, you will need to cover the following.
-- [yt-dlp](https://github.com/yt-dlp/yt-dlp) - A command-line Youtube music/video downloader, and sits at the core of this tool. You may install it with pip using `pip install yt-dlp`, or refer the [official page](https://github.com/yt-dlp/yt-dlp?tab=readme-ov-file#installation) for other sources. If using a standalone binary, be sure to add it to your `PATH`.
+- [yt-dlp](https://github.com/yt-dlp/yt-dlp) - A command-line Youtube music/video downloader, and sits at the core of this tool. You may install it with pip using `pip install yt-dlp`, or refer to the [official page](https://github.com/yt-dlp/yt-dlp?tab=readme-ov-file#installation) for other sources. If using a standalone binary, be sure to add it to your `PATH`.
 - [PIL](https://github.com/python-pillow/Pillow) - Python Imaging Library, for processing images in Python. Used for importing and cropping the thumbnail image. Install it with pip using `pip install Pillow`.
 - [mutagen](https://github.com/quodlibet/mutagen) - A python module for managing audio metadata and formats. Also allows embedding some cover art/thumbnail to a song. Install it with pip using `pip install mutagen`
 - [colorama](https://github.com/tartley/colorama) - A simple python module that provides colored text in terminal. Purely cosmetic, you may remove it along with all of its references if you wish. Otherwise, you may install it with pip using `pip install colorma`.
@@ -57,4 +57,4 @@ For building the package using the *wheel distribution*, all binaries are pre-co
 
 	pip install yt_bhs-x.x.x-py3-none-any.whl
 ## LICENSE
-`yt-bhs` is supplied under the [Unlicense](https://unlicense.org/) license, though some underlying components and dependencies may make use of other licenses that may or may not have the same conditions.
+`yt-bhs` is provided under [Unlicense](https://unlicense.org/), though some underlying components and dependencies may make use of other licenses that may or may not have the same conditions.
